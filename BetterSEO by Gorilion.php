@@ -222,6 +222,7 @@ function gorilion_seo_switcher_inject_functions()
             $tenant_id = get_option('betterseo_tenant_id', 'default-tenant-id');
 
             // If it's a "collection" page.
+            // ToDo: Collection should be variable
             if ($post->post_name === 'collection') {
                 $collection_url_base = "https://api.commerce7.com/v1/product/for-web?&collectionSlug=";
                 $url = $collection_url_base . $result;
